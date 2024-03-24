@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="images\dlogo.ico" type="image/ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@1,600&family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <title>Debateur</title>
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js"></script>
+    <link rel="stylesheet" href="Bate style.css">
+    <script src="Bate script.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="navbar-bar">
+            <li class="logo">
+                <a href="index.html" class="navbar-link">
+                    <img class="logosvg" src="./images/dlogo.svg" alt="logo">
+                    <span class="link-name">Debateur</span>
+                </a>
+            </li>
+
+            <li class="navbar-nav">
+                <a href="#Home" class="navbar-link">
+                    <svg class="fillnav" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" />
+                    </svg>
+                    <span class="link-name">Home</span>
+                </a>
+            </li>
+
+            <li class="navbar-nav">
+                <a href="#Train" class="navbar-link">
+                    <svg class="fillnav" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                        <path
+                            d="M192 64C86 64 0 150 0 256S86 448 192 448H448c106 0 192-86 192-192s-86-192-192-192H192zM496 168a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM392 304a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM168 200c0-13.3 10.7-24 24-24s24 10.7 24 24v32h32c13.3 0 24 10.7 24 24s-10.7 24-24 24H216v32c0 13.3-10.7 24-24 24s-24-10.7-24-24V280H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h32V200z" />
+                    </svg>
+                    <span class="link-name">Train</span>
+                </a>
+            </li>
+
+            <li class="navbar-nav">
+                <a href="#User" class="navbar-link">
+                    <svg class="fillnav" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path
+                            d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
+                    </svg>
+                    <span class="link-name">User</span>
+                </a>
+            </li>          
+
+            <li class="navbar-nav">
+                <a href="#Leaderboard" class="navbar-link">
+                    <svg class="fillnav" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                        <path d="M353.8 54.1L330.2 6.3c-3.9-8.3-16.1-8.6-20.4 0L286.2 54.1l-52.3 7.5c-9.3 1.4-13.3 12.9-6.4 19.8l38 37-9 52.1c-1.4 9.3 8.2 16.5 16.8 12.2l46.9-24.8 46.6 24.4c8.6 4.3 18.3-2.9 16.8-12.2l-9-52.1 38-36.6c6.8-6.8 2.9-18.3-6.4-19.8l-52.3-7.5zM256 256c-17.7 0-32 14.3-32 32V480c0 17.7 14.3 32 32 32H384c17.7 0 32-14.3 32-32V288c0-17.7-14.3-32-32-32H256zM32 320c-17.7 0-32 14.3-32 32V480c0 17.7 14.3 32 32 32H160c17.7 0 32-14.3 32-32V352c0-17.7-14.3-32-32-32H32zm416 96v64c0 17.7 14.3 32 32 32H608c17.7 0 32-14.3 32-32V416c0-17.7-14.3-32-32-32H480c-17.7 0-32 14.3-32 32z" />
+                    </svg>
+                    <span class="link-name">Leaderboard</span>
+                </a>
+            </li>
+
+            <li class="navbar-nav">
+                <a href="#About" class="navbar-link">
+                    <svg class="fillnav" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path
+                            d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm80 256h64c44.2 0 80 35.8 80 80c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16c0-44.2 35.8-80 80-80zm-32-96a64 64 0 1 1 128 0 64 64 0 1 1 -128 0zm256-32H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16s7.2-16 16-16z" />
+                    </svg>
+                    <span class="link-name">About</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <section id="home" >
+        <svg class="blob-motion" id="visual" viewBox="0 0 960 540" width="960" height="540"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+            <g transform="translate(469.0008303261919 290.5628839753174)">
+                <path id="blob1"
+                        d="M114.8 -170.9C136.6 -118.5 133.8 -70.8 159.1 -15.1C184.3 40.6 237.6 104.3 223 128C208.4 151.6 125.9 135.3 58.7 158.5C-8.4 181.7 -60.1 244.5 -108 248.2C-156 251.9 -200.1 196.4 -203.3 141.4C-206.5 86.3 -168.7 31.6 -158 -27.6C-147.3 -86.9 -163.6 -150.7 -141.8 -203.1C-120 -255.5 -60 -296.5 -6.7 -288.5C46.5 -280.4 93 -223.3 114.8 -170.9"
+                        fill="var(--background-logo)"></path>
+            </g>
+            <g transform="translate(469.5275524871505 293.0558625688694)" style="visibility: hidden;">
+                <path id="blob2"
+                        d="M140.7 -141.6C196.1 -121.2 264.2 -89.9 283.7 -40.9C303.3 8.1 274.2 74.8 226 104.4C177.8 134 110.6 126.5 57.7 135.9C4.8 145.4 -33.7 171.8 -75.7 172.1C-117.7 172.4 -163.2 146.4 -200.7 104.6C-238.3 62.9 -267.8 5.2 -268.9 -57.6C-270.1 -120.5 -242.7 -188.6 -193.1 -210C-143.6 -231.4 -71.8 -206.2 -14.6 -188.8C42.6 -171.5 85.3 -162 140.7 -141.6"
+                        fill="var(--background-logo)"></path>
+            </g>
+        </svg>
+        <script>
+            const tween = KUTE.fromTo(
+                '#blob1',
+                { path: '#blob1' },
+                { path: '#blob2' },
+                { repeat: 999, duration: 3000, yoyo: true }
+            )
+            tween.start()
+        </script>
+            <hi id="he1"><b>Debateur</b></hi>
+            <h4 id="he2">
+                Talk The Talk, Walk The Walk
+            </h4>
+    </section>
+    <main>
+        <section id="Train" class="green">            
+            <hi style="margin-top: 5rem;" id="he2"><b>Train</b></hi>
+            <div class="chatbox">
+                <header class="bateheader">Monsier Bateur</header>
+                <div id="messages">
+                    <ul class="texts">
+                        <li class="incoming">
+                            <span id="bot icon">
+                                <svg class="fillicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                    <path d="M320 0c17.7 0 32 14.3 32 32V96H472c39.8 0 72 32.2 72 72V440c0 39.8-32.2 72-72 72H168c-39.8 0-72-32.2-72-72V168c0-39.8 32.2-72 72-72H288V32c0-17.7 14.3-32 32-32zM208 384c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H208zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H304zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H400zM264 256a40 40 0 1 0 -80 0 40 40 0 1 0 80 0zm152 40a40 40 0 1 0 0-80 40 40 0 1 0 0 80zM48 224H64V416H48c-26.5 0-48-21.5-48-48V272c0-26.5 21.5-48 48-48zm544 0c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H576V224h16z"/>
+                                </svg>
+                            </span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, consequatur labore. Quam doloribus magni libero ipsam. Sunt ipsum nihil temporibus ipsa laboriosam autem ullam! Dolorem distinctio alias quasi deserunt ipsa?</p>
+                        </li>
+                        <li class="outcoming">
+                            <p id="" class="chatlog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cumque maiores magnam aperiam earum mollitia cum hic aut eum. Tempore minima dolore excepturi ut reprehenderit libero quidem. Asperiores, voluptates laborum?</p>
+                        </li>
+                    </ul>
+                </div>
+                    <textarea type="text" id="textinput" placehholder="Hone your words"></textarea>
+                    <span id="bot icon">
+                        <svg class="fillsend" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M16.1 260.2c-22.6 12.9-20.5 47.3 3.6 57.3L160 376V479.3c0 18.1 14.6 32.7 32.7 32.7c9.7 0 18.9-4.3 25.1-11.8l62-74.3 123.9 51.6c18.9 7.9 40.8-4.5 43.9-24.7l64-416c1.9-12.1-3.4-24.3-13.5-31.2s-23.3-7.5-34-1.4l-448 256zm52.1 25.5L409.7 90.6 190.1 336l1.2 1L68.2 285.7zM403.3 425.4L236.7 355.9 450.8 116.6 403.3 425.4z"/>
+                        </svg>
+                    </span>
+            </div>
+            <div class="scurvealt">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

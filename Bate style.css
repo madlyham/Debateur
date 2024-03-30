@@ -20,7 +20,7 @@
     background: var(--background-nav);
     transition: width 250ms ease;
     z-index: 10;
-    border: 0
+    border: 0;
 }
 
 .fillnav {
@@ -28,23 +28,6 @@
     size: 5rem;
     transition: 600ms;
 
-}
-
-.fillicon {
-    fill: var(--background-pop);
-    transition: 600ms;
-    width:3rem; 
-    height:3rem;
-    display:inline-block;
-}
-
-.fillsend {
-    fill: var(--background-pop);
-    transition: 600ms;
-    width:3rem; 
-    height:3rem;
-    display: flexbox;
-    position: absolute;
 }
 
 .navbar-bar {
@@ -148,38 +131,139 @@ input:focus, input:active {
     background: transparent;
 }
 
-textarea {
-    display: inline-block;
-    background-color: transparent;;
-    border:var(--background-prim) solid 0.2rem;
+.chatbox .chatinput textarea {
+    background-color: transparent;
+    border:transparent;
     font-size: 2rem; 
     color:var(--text-primary);
-    border-radius:0.4rem;
-    width: 80vw;
-    margin-left: 0.3rem;
+    width: 90%;
+    margin-left: 0.5rem;
     margin-right: 0.1rem;
-    height: 3rem;
+    margin-top: 0.2rem;
+    outline: transparent;
+    overflow: auto; 
+    max-height: 3rem;
 }
+
+.chatbox .chatinput {
+    outline: none;
+    border-top: 0.1rem solid;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    max-height: 4rem;
+}
+
+.chatinput textarea:valid ~ span:hover {
+    cursor: pointer;
+}
+
 .bateheader {
     background: var(--background-logo);
     display: block;
-    padding-top: -1rem;
     z-index: 5;
     font-family: 'Bodoni Moda', serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    width: 100%;
     color: var(--text-primary);
-}
-
-textarea:focus, input:active {
-    background: transparent;
+    text-align: center;
+    position: relative;
 }
 
 .chatbox {
     background: var(--background-light);
     border-radius: 0.5rem;
     width: 85vw;
-    font-size: 2rem;
-    height: 90vh;
+    font-size: 1.5rem;
+    height: 600px;
+    resize: none;
+    overflow: hidden;
+}
+.chatbox::-webkit-scrollbar {
+    width: 0.3rem;
+}
+.chatbox::-webkit-scrollbar-track {
+    background: transparent
+}
+.chatbox::-webkit-scrollbar-thumb {
+    background: var(--background-secon);
+}
+
+.chatbox .chatlog {
+    height: 600px;
+    overflow-y: scroll;
+    padding: 5px 0px 70px; 
+    resize: none;
+}
+
+.chatbox .texts {
+    display: block;
+    font-weight: 500;
+}
+
+.chatbox .texts ul {
+    list-style-type: none;
+    overflow-y: scroll;
+    height: 80%;
+    position: relative;
+}
+
+.chatbox .texts li {
+    list-style-type: none;
+    width: fit-content;
+}
+ 
+.chatbox span{
+    display: flex;
+    font-weight: 500;
+}
+
+.chatbox .texts p {
+    border-radius: 10px 10px 0 10px;
+    padding: 12px 15px;
+    background: var(--background-pop);
+    color: var(--background-logo);
+    font-weight: bold;
+}
+
+.chatbox .incoming p {
+    background: var(--background-prim);
+    color: var(--text-primary);
+    border-radius: 10px 10px 10px 0px;    
+    margin: 20px 0px;
+    justify-content:left;
+} 
+
+.chatbox .outcoming p {
+    border-radius: 10px 10px 0 10px;
+    padding: 12px 15px;
+    background: var(--background-pop);
+    color: var(--background-logo);
+    font-weight: bold; 
+} 
+
+.chatbox .outcoming {
+    justify-content: right;
+}
+
+.chatbox .boticon {
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    background-color: var(--background-prim);
+    color: var(--background-pop);
+    padding: 5px 5px 0px 5px;
+    border-radius: 0.4rem;
+} 
+
+.chatlog::-webkit-scrollbar {
+    width: 0.5rem;
+}
+.chatlog::-webkit-scrollbar-track {
+    background: transparent
+}
+.chatlog::-webkit-scrollbar-thumb {
+    background: var(--background-secon);
 }
 
 .downlink {
@@ -430,5 +514,13 @@ section {
         padding-top: 0.2rem;
         width:4rem;
         margin: 0 1rem;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .chatbox {
+        height: 600px;
+    }
+    .chatinput {
+        width: 80%;
     }
 }

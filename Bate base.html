@@ -14,7 +14,8 @@
     <title>Debateur</title>
     <script src="https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js"></script>
     <link rel="stylesheet" href="Bate style.css">
-    <script src="Bate script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="Bate script.js" defer></script>
 </head>
 
 <body>
@@ -109,27 +110,26 @@
             <hi style="margin-top: 5rem;" id="he2"><b>Train</b></hi>
             <div class="chatbox">
                 <header class="bateheader">Monsier Bateur</header>
-                <div id="messages">
+                <div id="chatlog">
                     <ul class="texts">
-                        <li class="incoming">
-                            <span id="bot icon">
-                                <svg class="fillicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
-                                    <path d="M320 0c17.7 0 32 14.3 32 32V96H472c39.8 0 72 32.2 72 72V440c0 39.8-32.2 72-72 72H168c-39.8 0-72-32.2-72-72V168c0-39.8 32.2-72 72-72H288V32c0-17.7 14.3-32 32-32zM208 384c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H208zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H304zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H400zM264 256a40 40 0 1 0 -80 0 40 40 0 1 0 80 0zm152 40a40 40 0 1 0 0-80 40 40 0 1 0 0 80zM48 224H64V416H48c-26.5 0-48-21.5-48-48V272c0-26.5 21.5-48 48-48zm544 0c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H576V224h16z"/>
-                                </svg>
+                        <li class="texts incoming">
+                            <span class="boticon">
+                                <span class="material-symbols-outlined">
+                                    smart_toy
+                                </span>
                             </span>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, consequatur labore. Quam doloribus magni libero ipsam. Sunt ipsum nihil temporibus ipsa laboriosam autem ullam! Dolorem distinctio alias quasi deserunt ipsa?</p>
-                        </li>
-                        <li class="outcoming">
-                            <p id="" class="chatlog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cumque maiores magnam aperiam earum mollitia cum hic aut eum. Tempore minima dolore excepturi ut reprehenderit libero quidem. Asperiores, voluptates laborum?</p>
+                            <p id="bots">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, consequatur labore. Quam doloribus magni libero ipsam. Sunt ipsum nihil temporibus ipsa laboriosam autem ullam! Dolorem distinctio alias quasi deserunt ipsa?</p>
                         </li>
                     </ul>
                 </div>
-                    <textarea type="text" id="textinput" placehholder="Hone your words"></textarea>
-                    <span id="bot icon">
-                        <svg class="fillsend" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M16.1 260.2c-22.6 12.9-20.5 47.3 3.6 57.3L160 376V479.3c0 18.1 14.6 32.7 32.7 32.7c9.7 0 18.9-4.3 25.1-11.8l62-74.3 123.9 51.6c18.9 7.9 40.8-4.5 43.9-24.7l64-416c1.9-12.1-3.4-24.3-13.5-31.2s-23.3-7.5-34-1.4l-448 256zm52.1 25.5L409.7 90.6 190.1 336l1.2 1L68.2 285.7zM403.3 425.4L236.7 355.9 450.8 116.6 403.3 425.4z"/>
-                        </svg>
+                <div class="chatinput">
+                    <textarea type="texts" placeholder="Hone your words" required></textarea>
+                    <span class="sendicon">
+                        <span class="material-symbols-outlined">
+                            send
+                        </span>
                     </span>
+                </div>
             </div>
             <div class="scurvealt">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">

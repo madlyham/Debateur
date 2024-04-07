@@ -136,26 +136,42 @@ input:focus, input:active {
     border:transparent;
     font-size: 2rem; 
     color:var(--text-primary);
-    width: 90%;
+    width: 95%;
     margin-left: 0.5rem;
     margin-right: 0.1rem;
-    margin-top: 0.2rem;
     outline: transparent;
     overflow: auto; 
     max-height: 3rem;
+    resize: none;
 }
 
 .chatbox .chatinput {
-    outline: none;
     border-top: 0.1rem solid;
     width: 100%;
-    position: absolute;
-    bottom: 0;
-    max-height: 4rem;
+    position: relative;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-end;
+    bottom:0;
+    z-index: 1;
+    background: var(--background-light);
+}
+.chatbox .chatinput span {
+    font-size: 3.5rem;
+    display: flex;
+    font-weight: 500;
+    text-align: center;
+    filter: grayscale(100%) opacity(0.7);
+    transition: 500ms;
 }
 
-.chatinput textarea:valid ~ span:hover {
+.chatinput textarea:valid ~ span {
     cursor: pointer;
+
+}
+.chatinput span:hover {
+    filter: grayscale(0%) opacity(1);
+    color: var(--background-pop);
 }
 
 .bateheader {
@@ -167,60 +183,68 @@ input:focus, input:active {
     width: 100%;
     color: var(--text-primary);
     text-align: center;
+    top: 0;
+    height: 3.5rem;
     position: relative;
 }
 
 .chatbox {
+    display: flex;
+    flex-direction: column;
     background: var(--background-light);
     border-radius: 0.5rem;
     width: 85vw;
     font-size: 1.5rem;
-    height: 600px;
+    height: 630px;
     resize: none;
     overflow: hidden;
 }
-.chatbox::-webkit-scrollbar {
+
+.chatinput textarea::-webkit-scrollbar {
     width: 0.3rem;
 }
-.chatbox::-webkit-scrollbar-track {
+.chatinput textarea::-webkit-scrollbar-track {
     background: transparent
 }
-.chatbox::-webkit-scrollbar-thumb {
+.chatinput textarea::-webkit-scrollbar-thumb {
     background: var(--background-secon);
 }
+.chatinput textarea::-webkit-scrollbar-corner {
+    background: transparent
+}
 
-.chatbox .chatlog {
-    height: 600px;
-    overflow-y: scroll;
-    padding: 5px 0px 70px; 
+.chatlog {
+    overflow: auto;
+    background: transparent;
+    z-index: 1;
     resize: none;
+    height: 90%;
 }
 
 .chatbox .texts {
-    display: block;
-    font-weight: 500;
+    resize: none;
+    margin-top: 10px;
+
 }
 
 .chatbox .texts ul {
+    display:flex;
+    flex-direction: column;
     list-style-type: none;
-    overflow-y: scroll;
-    height: 80%;
-    position: relative;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    resize: none;
 }
 
 .chatbox .texts li {
+    display:flex;
+    flex-direction: row;
     list-style-type: none;
-    width: fit-content;
-}
- 
-.chatbox span{
-    display: flex;
-    font-weight: 500;
+    z-index: 1;
 }
 
 .chatbox .texts p {
-    border-radius: 10px 10px 0 10px;
-    padding: 12px 15px;
     background: var(--background-pop);
     color: var(--background-logo);
     font-weight: bold;
@@ -230,20 +254,29 @@ input:focus, input:active {
     background: var(--background-prim);
     color: var(--text-primary);
     border-radius: 10px 10px 10px 0px;    
-    margin: 20px 0px;
-    justify-content:left;
+    padding: 5px 10px;
+    justify-content:flex-start;
 } 
+
+.chatbox .incoming {
+    justify-content:flex-start;
+    max-width: 85%;
+}
 
 .chatbox .outcoming p {
     border-radius: 10px 10px 0 10px;
-    padding: 12px 15px;
+    padding: 5px 10px;
     background: var(--background-pop);
     color: var(--background-logo);
     font-weight: bold; 
+    justify-content: flex-end;
+    height:fit-content;
 } 
 
 .chatbox .outcoming {
-    justify-content: right;
+    justify-content: flex-end;
+    max-width: 95%;
+    min-width: 10%;
 }
 
 .chatbox .boticon {
@@ -264,6 +297,9 @@ input:focus, input:active {
 }
 .chatlog::-webkit-scrollbar-thumb {
     background: var(--background-secon);
+}
+.chatlog::-webkit-scrollbar-corner {
+    background: transparent
 }
 
 .downlink {
@@ -443,8 +479,11 @@ section {
 
 .blob-motion {
     position: absolute;
-    transform: translateY(-20%);
+    justify-content: center;
+    align-items: center;
+    transform: translateY(3vh) translateX(10vw) scale(90%);
     z-index: 0;
+    opacity: 70%;
 }
 
 .scurvealt {
@@ -522,5 +561,11 @@ section {
     }
     .chatinput {
         width: 80%;
+    }
+    .blob-motion {
+        transform: scale(80%) translateX(-30%);
+    }
+    .chatlog {
+        height: 90%;
     }
 }

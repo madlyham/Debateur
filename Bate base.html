@@ -78,28 +78,6 @@
         </ul>
     </nav>
     <section id="home" >
-        <svg class="blob-motion" id="visual" viewBox="0 0 960 540" width="960" height="540"
-            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-            <g transform="translate(469.0008303261919 290.5628839753174)">
-                <path id="blob1"
-                        d="M114.8 -170.9C136.6 -118.5 133.8 -70.8 159.1 -15.1C184.3 40.6 237.6 104.3 223 128C208.4 151.6 125.9 135.3 58.7 158.5C-8.4 181.7 -60.1 244.5 -108 248.2C-156 251.9 -200.1 196.4 -203.3 141.4C-206.5 86.3 -168.7 31.6 -158 -27.6C-147.3 -86.9 -163.6 -150.7 -141.8 -203.1C-120 -255.5 -60 -296.5 -6.7 -288.5C46.5 -280.4 93 -223.3 114.8 -170.9"
-                        fill="var(--background-logo)"></path>
-            </g>
-            <g transform="translate(469.5275524871505 293.0558625688694)" style="visibility: hidden;">
-                <path id="blob2"
-                        d="M140.7 -141.6C196.1 -121.2 264.2 -89.9 283.7 -40.9C303.3 8.1 274.2 74.8 226 104.4C177.8 134 110.6 126.5 57.7 135.9C4.8 145.4 -33.7 171.8 -75.7 172.1C-117.7 172.4 -163.2 146.4 -200.7 104.6C-238.3 62.9 -267.8 5.2 -268.9 -57.6C-270.1 -120.5 -242.7 -188.6 -193.1 -210C-143.6 -231.4 -71.8 -206.2 -14.6 -188.8C42.6 -171.5 85.3 -162 140.7 -141.6"
-                        fill="var(--background-logo)"></path>
-            </g>
-        </svg>
-        <script>
-            const tween = KUTE.fromTo(
-                '#blob1',
-                { path: '#blob1' },
-                { path: '#blob2' },
-                { repeat: 999, duration: 3000, yoyo: true }
-            )
-            tween.start()
-        </script>
             <hi id="he1"><b>Debateur</b></hi>
             <h4 id="he2">
                 Talk The Talk, Walk The Walk
@@ -110,15 +88,37 @@
             <hi style="margin-top: 5rem;" id="he2"><b>Train</b></hi>
             <div class="chatbox">
                 <header class="bateheader">Monsier Bateur</header>
-                <div id="chatlog">
+                <svg class="blob-motion" id="visual" viewBox="0 0 960 540" width="960" height="540"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                    <g transform="translate(469.0008303261919 290.5628839753174)">
+                        <path id="blob1"
+                                d="M114.8 -170.9C136.6 -118.5 133.8 -70.8 159.1 -15.1C184.3 40.6 237.6 104.3 223 128C208.4 151.6 125.9 135.3 58.7 158.5C-8.4 181.7 -60.1 244.5 -108 248.2C-156 251.9 -200.1 196.4 -203.3 141.4C-206.5 86.3 -168.7 31.6 -158 -27.6C-147.3 -86.9 -163.6 -150.7 -141.8 -203.1C-120 -255.5 -60 -296.5 -6.7 -288.5C46.5 -280.4 93 -223.3 114.8 -170.9"
+                                fill="var(--background-logo)"></path>
+                    </g>
+                    <g transform="translate(469.5275524871505 293.0558625688694)" style="visibility: hidden;">
+                        <path id="blob2"
+                                d="M140.7 -141.6C196.1 -121.2 264.2 -89.9 283.7 -40.9C303.3 8.1 274.2 74.8 226 104.4C177.8 134 110.6 126.5 57.7 135.9C4.8 145.4 -33.7 171.8 -75.7 172.1C-117.7 172.4 -163.2 146.4 -200.7 104.6C-238.3 62.9 -267.8 5.2 -268.9 -57.6C-270.1 -120.5 -242.7 -188.6 -193.1 -210C-143.6 -231.4 -71.8 -206.2 -14.6 -188.8C42.6 -171.5 85.3 -162 140.7 -141.6"
+                                fill="var(--background-logo)"></path>
+                    </g>
+                </svg>
+                <script>
+                    const tween = KUTE.fromTo(
+                        '#blob1',
+                        { path: '#blob1' },
+                        { path: '#blob2' },
+                        { repeat: 999, duration: 3000, yoyo: true }
+                    )
+                    tween.start()
+                </script>
+                <div class="chatlog">
                     <ul class="texts">
-                        <li class="texts incoming">
+                        <li class="text incoming">
                             <span class="boticon">
                                 <span class="material-symbols-outlined">
                                     smart_toy
                                 </span>
                             </span>
-                            <p id="bots">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, consequatur labore. Quam doloribus magni libero ipsam. Sunt ipsum nihil temporibus ipsa laboriosam autem ullam! Dolorem distinctio alias quasi deserunt ipsa?</p>
+                            <p id="bots">Greetings, my mane is Monsier Bateur. What shall we debate today?</p>
                         </li>
                     </ul>
                 </div>

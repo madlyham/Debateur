@@ -1,2 +1,2 @@
 # Debateur
-The only debate trainer 
+The only debate trainer you'll need
